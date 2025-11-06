@@ -86,3 +86,10 @@ igibson/render/mesh_renderer/libcryptopp.8.6.dylib
 # Coverage
 .coverage
 coverage.xml
+
+floorplan_verse
+igibson/00017
+igibson/00135-HeSYRw7eMtG/
+igibson/examples/scripts/results/eval_*
+visualnav_transformer/
+igibson/hm3d_train/

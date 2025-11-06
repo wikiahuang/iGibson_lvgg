@@ -1,0 +1,4 @@
+scenes_dir: /home/weiqi/data/floverse_data/eval/eval_with_obj
+model_config: /home/weiqi/code/floorplan-verse/baseline/zson/config/model.yaml
+traj_save_dir: /home/weiqi/data/iGibson/igibson/examples/scripts/results/eval_zson
+

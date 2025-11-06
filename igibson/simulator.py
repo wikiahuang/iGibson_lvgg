@@ -225,6 +225,7 @@ class Simulator:
         :param scene: a scene object to load
         """
         assert isinstance(scene, Scene), "import_scene can only be called with Scene"
+        print("yes")
         scene.load(self)
         self.scene = scene
 

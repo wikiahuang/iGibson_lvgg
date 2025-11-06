@@ -46,7 +46,7 @@ class PointNavFixedTask(BaseTask):
         self.visible_path = self.config.get("visible_path", False)
         self.floor_num = 0
 
-        self.load_visualization(env)
+        # self.load_visualization(env)
 
     def load_visualization(self, env):
         """

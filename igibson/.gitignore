@@ -5,3 +5,9 @@ dataset
 ig_dataset
 render/coord.npy
 render/model.pth
+floorplan_verse
+igibson/00017
+igibson/00135-HeSYRw7eMtG/
+igibson/examples/scripts/results/eval_*
+visualnav_transformer/
+igibson/hm3d_train/

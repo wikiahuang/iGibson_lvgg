@@ -207,6 +207,8 @@ class IndoorScene(with_metaclass(ABCMeta, Scene)):
         g = self.floor_graph[floor]
 
         if not g.has_node(target_map):
+            print("target_is_not_in_the_trav_map-- source_world:", source_world, "  target_world: ", target_world)
+            return None, None, target_world
             nodes = np.array(g.nodes)
             closest_node = tuple(nodes[np.argmin(np.linalg.norm(nodes - target_map, axis=1))])
             g.add_edge(closest_node, target_map, weight=l2_distance(closest_node, target_map))
@@ -229,4 +231,4 @@ class IndoorScene(with_metaclass(ABCMeta, Scene)):
                 remaining_waypoints = np.tile(target_world, (num_remaining_waypoints, 1))
                 path_world = np.concatenate((path_world, remaining_waypoints), axis=0)
 
-        return path_world, geodesic_distance
+        return path_world, geodesic_distance, None
